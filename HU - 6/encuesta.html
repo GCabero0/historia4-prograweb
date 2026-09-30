@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encuesta de satisfacción</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <strong>Mesa de Ayuda</strong>
+    <div class="buscador">
+      <input type="text" placeholder="Buscar por código de ticket · TCK-2026-…">
+    </div>
+    <span class="resumen">Mis tickets abiertos <strong>3</strong></span>
+    <div class="usuario">
+      <div>
+        <span class="nombre">Camila Quispe Ramos</span>
+        <span class="rol">Usuario</span>
+      </div>
+      <span class="avatar">CQ</span>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <nav>
+      <p>Mis servicios</p>
+      <a href="#">Inicio</a>
+      <a href="#">Nuevo ticket</a>
+      <a href="#">Mis tickets <span class="contador">12</span></a>
+      <a class="activo" href="encuesta.html">Encuesta pendiente <span class="contador">1</span></a>
+      <a href="mis-encuestas.html">Mis encuestas <span class="contador">7</span></a>
+      <a href="#">Mi cuenta</a>
+
+      <div class="nav-pie">
+        <a href="#">Mi cuenta</a>
+        <a href="#">Cerrar sesión</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>¿Cómo fue la atención de tu ticket?</h1>
+      <p class="subtitulo">Tu respuesta ayuda al área de Infraestructura a mejorar los tiempos y el trato. Toma menos de un minuto.</p>
+
+      <div class="columnas">
+
+        <!-- formulario -->
+        <form class="tarjeta principal" action="#" method="post">
+          <div class="grupo">
+            <p class="etiqueta">Puntaje general</p>
+            <div class="opciones opciones-general">
+              <input type="radio" name="general" id="general-1" value="1"><label for="general-1">1</label>
+              <input type="radio" name="general" id="general-2" value="2"><label for="general-2">2</label>
+              <input type="radio" name="general" id="general-3" value="3"><label for="general-3">3</label>
+              <input type="radio" name="general" id="general-4" value="4" checked><label for="general-4">4</label>
+              <input type="radio" name="general" id="general-5" value="5"><label for="general-5">5</label>
+              <span class="texto-puntaje">4 · Buena atención</span>
+            </div>
+          </div>
+
+          <div class="grupo">
+            <p class="etiqueta">Calificación por aspectos</p>
+        <div class="aspecto">
+          <p>Rapidez</p>
+          <div class="opciones">
+            <input type="radio" name="rapidez" id="rapidez-1" value="1"><label for="rapidez-1">1</label>
+            <input type="radio" name="rapidez" id="rapidez-2" value="2"><label for="rapidez-2">2</label>
+            <input type="radio" name="rapidez" id="rapidez-3" value="3" checked><label for="rapidez-3">3</label>
+            <input type="radio" name="rapidez" id="rapidez-4" value="4"><label for="rapidez-4">4</label>
+            <input type="radio" name="rapidez" id="rapidez-5" value="5"><label for="rapidez-5">5</label>
+          </div>
+        </div>
+        <div class="aspecto">
+          <p>Trato del técnico</p>
+          <div class="opciones">
+            <input type="radio" name="trato" id="trato-1" value="1"><label for="trato-1">1</label>
+            <input type="radio" name="trato" id="trato-2" value="2"><label for="trato-2">2</label>
+            <input type="radio" name="trato" id="trato-3" value="3"><label for="trato-3">3</label>
+            <input type="radio" name="trato" id="trato-4" value="4"><label for="trato-4">4</label>
+            <input type="radio" name="trato" id="trato-5" value="5" checked><label for="trato-5">5</label>
+          </div>
+        </div>
+        <div class="aspecto">
+          <p>Solución del problema</p>
+          <div class="opciones">
+            <input type="radio" name="solucion" id="solucion-1" value="1"><label for="solucion-1">1</label>
+            <input type="radio" name="solucion" id="solucion-2" value="2"><label for="solucion-2">2</label>
+            <input type="radio" name="solucion" id="solucion-3" value="3"><label for="solucion-3">3</label>
+            <input type="radio" name="solucion" id="solucion-4" value="4" checked><label for="solucion-4">4</label>
+            <input type="radio" name="solucion" id="solucion-5" value="5"><label for="solucion-5">5</label>
+          </div>
+        </div>
+          </div>
+
+          <div class="grupo">
+            <label class="etiqueta" for="comentario">Comentario (opcional)</label>
+            <textarea id="comentario" name="comentario" rows="5">El técnico llegó rápido y explicó qué había pasado. Tardó un día porque faltaba el repuesto.</textarea>
+            <p class="ayuda">Tu comentario lo lee el supervisor del área; el técnico lo ve sin tu nombre.</p>
+          </div>
+
+          <div class="acciones">
+            <button class="boton boton-primario" type="submit">Enviar encuesta</button>
+            <a href="#">Responder después</a>
+          </div>
+        </form>
+
+        <!-- ticket evaluado -->
+        <aside class="lateral">
+          <div class="tarjeta">
+            <h2>Ticket evaluado</h2>
+            <strong class="codigo ticket-codigo">TCK-2026-00130</strong>
+            <p>Extensión eléctrica en mal estado</p>
+
+            <div class="datos">
+              <p class="dato"><span>Categoría</span><span>Eléctrico</span></p>
+              <p class="dato"><span>Ambiente</span><span class="codigo">E-304</span></p>
+              <p class="dato"><span>Técnico</span><span>Iván Zegarra Pinto</span></p>
+              <p class="dato"><span>Cerrado</span><span>01/09/2026</span></p>
+              <p class="dato"><span>Tiempo de atención</span><span>1 d 6 h 12 min</span></p>
+            </div>
+          </div>
+
+          <p class="nota">Puedes editar tu respuesta hasta 7 días después de enviarla.</p>
+        </aside>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <span>Mesa de Ayuda de Servicios del Campus · Universidad de Lima</span>
+    <span>soporte.campus@ulima.edu.pe · anexo 30500 · Términos · Privacidad</span>
+  </footer>
+
+</body>
+</html>

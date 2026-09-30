@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis encuestas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <strong>Mesa de Ayuda</strong>
+    <div class="buscador">
+      <input type="text" placeholder="Buscar por código de ticket · TCK-2026-…">
+    </div>
+    <span class="resumen">Mis tickets abiertos <strong>3</strong></span>
+    <div class="usuario">
+      <div>
+        <span class="nombre">Camila Quispe Ramos</span>
+        <span class="rol">Usuario</span>
+      </div>
+      <span class="avatar">CQ</span>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <nav>
+      <p>Mis servicios</p>
+      <a href="#">Inicio</a>
+      <a href="#">Nuevo ticket</a>
+      <a href="#">Mis tickets <span class="contador">12</span></a>
+      <a href="encuesta.html">Encuesta pendiente <span class="contador">1</span></a>
+      <a class="activo" href="mis-encuestas.html">Mis encuestas <span class="contador">7</span></a>
+      <a href="#">Mi cuenta</a>
+
+      <div class="nav-pie">
+        <a href="#">Mi cuenta</a>
+        <a href="#">Cerrar sesión</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Mis encuestas</h1>
+      <p class="subtitulo">7 encuestas respondidas · 1 pendiente · promedio que diste: 4.2 de 5</p>
+
+      <!-- aviso de encuesta pendiente -->
+      <div class="aviso">
+        <p>Tienes 1 encuesta pendiente del ticket <strong class="codigo">TCK-2026-00131</strong>. El plazo vence el 10/09/2026.</p>
+        <a class="boton boton-advertencia boton-chico" href="encuesta.html">Responder ahora</a>
+      </div>
+
+      <!-- tabla de encuestas -->
+      <div class="tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>Ticket</th>
+              <th>Asunto</th>
+              <th>Técnico</th>
+              <th>Respondida</th>
+              <th>Puntaje</th>
+              <th>Plazo de edición</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="codigo">TCK-2026-00131</td>
+            <td>Piso con residuos tras evento</td>
+            <td class="gris">Rocío Espinoza Farfán</td>
+            <td>03/09/2026</td>
+            <td class="destacado">5 / 5</td>
+            <td class="gris">Editable hasta el 10/09/2026</td>
+          </tr>
+          <tr>
+            <td class="codigo">TCK-2026-00130</td>
+            <td>Extensión eléctrica en mal estado</td>
+            <td class="gris">Iván Zegarra Pinto</td>
+            <td>01/09/2026</td>
+            <td class="destacado">4 / 5</td>
+            <td class="gris">Editable hasta el 08/09/2026</td>
+          </tr>
+          <tr>
+            <td class="codigo">TCK-2026-00122</td>
+            <td>Aire acondicionado sin frío</td>
+            <td class="gris">Sandra Nolasco Ríos</td>
+            <td>27/08/2026</td>
+            <td class="destacado">3 / 5</td>
+            <td class="gris">Plazo vencido</td>
+          </tr>
+          <tr>
+            <td class="codigo">TCK-2026-00118</td>
+            <td>Proyector no enciende</td>
+            <td class="gris">Julio Paredes Soto</td>
+            <td>21/08/2026</td>
+            <td class="destacado">5 / 5</td>
+            <td class="gris">Plazo vencido</td>
+          </tr>
+          <tr>
+            <td class="codigo">TCK-2026-00109</td>
+            <td>Silla rota en aula</td>
+            <td class="gris">Marco Huamán Vela</td>
+            <td>14/08/2026</td>
+            <td class="destacado">4 / 5</td>
+            <td class="gris">Plazo vencido</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- estado vacio y notificacion -->
+      <div class="mensajes">
+        <div class="tarjeta vacio">
+          <div class="icono"></div>
+          <h2>Estado vacío · aún no respondes encuestas</h2>
+          <p>Cuando se cierre uno de tus tickets te pediremos calificar la atención.</p>
+          <a class="boton boton-primario boton-chico" href="#">Ver mis tickets</a>
+        </div>
+
+        <p class="exito">Notificación de resultado · «Gracias, registramos tu encuesta del ticket TCK-2026-00130.»</p>
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <span>Mesa de Ayuda de Servicios del Campus · Universidad de Lima</span>
+    <span>soporte.campus@ulima.edu.pe · anexo 30500 · Términos · Privacidad</span>
+  </footer>
+
+</body>
+</html>

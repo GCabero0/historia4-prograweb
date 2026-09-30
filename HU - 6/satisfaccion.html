@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Satisfacción por técnico y categoría</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="supervisor">
+    <strong>Mesa de Ayuda</strong>
+    <div class="buscador">
+      <input type="text" placeholder="Buscar por código de ticket · TCK-2026-…">
+    </div>
+    <span class="resumen">Cola sin asignar <strong>9</strong></span>
+    <div class="usuario">
+      <div>
+        <span class="nombre">Lucía Mendoza Ríos</span>
+        <span class="rol">Supervisor</span>
+      </div>
+      <span class="avatar">LM</span>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <nav>
+      <p>Supervisión</p>
+      <a href="#">Tablero</a>
+      <a href="#">Cola de atención <span class="contador">24</span></a>
+      <a href="#">Bandejas de técnicos <span class="contador">6</span></a>
+      <a href="#">Categorías <span class="contador">7</span></a>
+      <a href="#">Sedes y ambientes <span class="contador">48</span></a>
+      <a href="#">Técnicos por categoría</a>
+      <a class="activo" href="satisfaccion.html">Satisfacción</a>
+      <a href="#">Carga por técnico</a>
+      <a href="#">Usuarios <span class="contador">15</span></a>
+
+      <div class="nav-pie">
+        <a href="#">Mi cuenta</a>
+        <a href="#">Cerrar sesión</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="encabezado">
+        <div>
+          <h1>Satisfacción por técnico y categoría</h1>
+          <p class="subtitulo">141 encuestas respondidas · tasa de respuesta 62 % · promedio general 4.4 de 5</p>
+        </div>
+
+        <div class="filtros">
+          <select>
+            <option>Periodo: 01/08/2026 – 07/09/2026</option>
+            <option>Periodo: 01/09/2026 – 30/09/2026</option>
+            <option>Periodo: últimos 90 días</option>
+          </select>
+          <button class="boton boton-secundario" type="button">Exportar</button>
+        </div>
+      </div>
+
+      <div class="columnas">
+
+        <!-- tabla de promedios -->
+        <div class="tabla principal">
+          <table>
+            <thead>
+              <tr>
+                <th>Técnico</th>
+                <th>Categoría principal</th>
+                <th>General</th>
+                <th>Rapidez</th>
+                <th>Trato</th>
+                <th>Solución</th>
+                <th>Encuestas</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><strong>Julio Paredes Soto</strong></td>
+              <td class="gris">Audiovisuales</td>
+              <td class="destacado">4.6</td>
+              <td>4.5</td>
+              <td>4.7</td>
+              <td>4.6</td>
+              <td><strong>31</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Sandra Nolasco Ríos</strong></td>
+              <td class="gris">Redes y conectividad</td>
+              <td class="destacado">4.2</td>
+              <td>3.9</td>
+              <td>4.4</td>
+              <td>4.3</td>
+              <td><strong>24</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Iván Zegarra Pinto</strong></td>
+              <td class="gris">Eléctrico</td>
+              <td class="destacado">4.8</td>
+              <td>4.9</td>
+              <td>4.7</td>
+              <td>4.8</td>
+              <td><strong>28</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Marco Huamán Vela</strong></td>
+              <td class="gris">Mobiliario</td>
+              <td class="destacado">4.4</td>
+              <td>4.2</td>
+              <td>4.5</td>
+              <td>4.4</td>
+              <td><strong>19</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Rocío Espinoza Farfán</strong></td>
+              <td class="gris">Limpieza</td>
+              <td class="destacado">4.7</td>
+              <td>4.8</td>
+              <td>4.6</td>
+              <td>4.7</td>
+              <td><strong>22</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Hernán Loayza Pomar</strong></td>
+              <td class="gris">Climatización</td>
+              <td class="destacado">3.9</td>
+              <td>3.5</td>
+              <td>4.1</td>
+              <td>4.0</td>
+              <td><strong>17</strong></td>
+            </tr>
+            </tbody>
+          </table>
+          <p class="nota-tabla">Climatización es la categoría con menor promedio (3.9). Rapidez es el aspecto peor calificado del área.</p>
+        </div>
+
+        <!-- comentarios -->
+        <aside class="tarjeta lateral">
+          <div class="titulo-lateral">
+            <h2>Comentarios recibidos</h2>
+            <select>
+              <option>Puntaje: todos</option>
+              <option selected>Puntaje: 1 a 3</option>
+              <option>Puntaje: 4 a 5</option>
+            </select>
+          </div>
+
+          <div>
+          <div class="comentario">
+            <p class="comentario-datos"><strong class="puntaje-bajo">2 / 5</strong> Climatización · Hernán Loayza Pomar · 04/09/2026</p>
+            <p>«El aire recién funcionó al tercer día. Nadie avisó que faltaba un repuesto.»</p>
+          </div>
+          <div class="comentario">
+            <p class="comentario-datos"><strong class="puntaje-medio">3 / 5</strong> Redes · Sandra Nolasco Ríos · 02/09/2026</p>
+            <p>«Se resolvió, pero tuve que volver a reportar el mismo punto de red dos semanas después.»</p>
+          </div>
+          <div class="comentario">
+            <p class="comentario-datos"><strong class="puntaje-alto">5 / 5</strong> Eléctrico · Iván Zegarra Pinto · 01/09/2026</p>
+            <p>«Llegó en veinte minutos y explicó qué había pasado con el tomacorriente.»</p>
+          </div>
+          <div class="comentario">
+            <p class="comentario-datos"><strong class="puntaje-alto">4 / 5</strong> Audiovisuales · Julio Paredes Soto · 31/08/2026</p>
+            <p>«Solucionó la proyección antes de que empezara la clase.»</p>
+          </div>
+          </div>
+        </aside>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <span>Mesa de Ayuda de Servicios del Campus · Universidad de Lima</span>
+    <span>soporte.campus@ulima.edu.pe · anexo 30500 · Términos · Privacidad</span>
+  </footer>
+
+</body>
+</html>
